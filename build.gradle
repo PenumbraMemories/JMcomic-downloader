@@ -1,0 +1,14 @@
+plugins { id 'java-library' }
+
+repositories { mavenCentral() }
+
+group = 'app.jmclean'
+version = '1.0.0'
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(17) }
+}
+
+dependencies {
+    api 'io.github.jukomu:jmcomic-core:1.1.10'
+}
